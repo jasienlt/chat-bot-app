@@ -28,16 +28,20 @@ git clone
 
 ### 2. Install dependencies
 
+For Mac
 ```bash (Mac)
 pip install -r requirements.txt
 ```
 
+For Windows
 ```bash (Windows)
 python -m pip install -r requirements.txt
 ```
 
-### 3. Set your OpenAI API key
+### 3. Set your API key:
+## 3.1 For OpenAI:
 
+For Mac
 ```bash (Mac)
 cp .env.example .env
 # edit .env and paste your key
@@ -46,6 +50,7 @@ cp .env.example .env
 export OPENAI_API_KEY=sk-...
 ```
 
+For Windows
 ```bash (Windows)
 copy .env.example .env
 # edit .env and paste your key
@@ -54,12 +59,55 @@ copy .env.example .env
 set OPENAI_API_KEY=sk-...
 ```
 
+## 3.2 For Gemini:
+
+For Mac
+```bash (Mac)
+# Get a free Gemini key (no credit card, 2 minutes):
+# → https://aistudio.google.com/apikey
+
+export GEMINI_API_KEY=your-key-here
+export PROVIDER=gemini
+```
+
+For Windows
+```bash (Windows)
+# Get a free Gemini key (no credit card, 2 minutes):
+# → https://aistudio.google.com/apikey
+
+set GEMINI_API_KEY=your-key-here
+set PROVIDER=gemini
+```
+
+## 3.3 For Groq:
+
+For Mac
+```bash (Mac)
+# Get a free Gemini key (no credit card, 2 minutes):
+# → https://aistudio.google.com/apikey
+
+export GROQ_API_KEY=your-key-here
+export PROVIDER=groq
+```
+
+For Windows
+```bash (Windows)
+# Get a free Gemini key (no credit card, 2 minutes):
+# → https://aistudio.google.com/apikey
+
+set GROQ_API_KEY=your-key-here
+set PROVIDER=groq
+```
+
+
 ### 4. Run
 
+For Mac
 ```bash (Mac)
 streamlit run chatbot_app.py
 ```
 
+For Windows
 ```bash (Windows)
 python -m streamlit run chatbot_app.py
 ```
